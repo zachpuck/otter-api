@@ -1,0 +1,12 @@
+# default values for helm
+
+replicaCount: 1
+
+image:
+  repository: zachpuck/otter-api
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
